@@ -20,8 +20,39 @@ The main objective of the the GPEC was to allow the user to record a video of th
 
 `frontend.py` : Script to pipeline all the process (GUI still in development).
 
+
+## Narrative Nexus
+
+Narrative Nexus is a Streamlit application that generates a story based on user input and converts the story into speech.
+
+### Installation
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the required packages.
+
+### Usage
+
+1. Run the Streamlit app.
+2. Open the provided URL in your web browser.
+3. Enter your text in the text area and click the "Generate Story" button.
+4. The application will generate a story based on your input and display it on the page.
+5. The application will also convert the story into speech and play the audio.
+
+### Features
+
+- Text-to-speech conversion: The application uses the Camb.ai Text-to-Speech API to convert the generated story into speech.
+- Story generation: The application uses the Langchain Groq API to generate a story based on user input.
+
+### Dependencies
+
+- Streamlit
+- Requests
+- Time
+- Langchain Core
+- Langchain Groq
+- PyDub
+
 #### Note: Replicating this code would require you to purchase CAMB AI api for TTS, Dubbing etc.
 
 
-## Story Telling
-           
