@@ -1,0 +1,5 @@
+streamlit==0.90.0
+requests==2.26.0
+pydub==0.25.1
+langchain-core==0.1.0
+langchain-groq==0.1.0
