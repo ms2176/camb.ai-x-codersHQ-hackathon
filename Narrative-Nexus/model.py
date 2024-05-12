@@ -1,4 +1,3 @@
-##API key: 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
 import streamlit as st
 import requests
 import time
@@ -16,7 +15,7 @@ def main():
     system = "You are a helpful assistant."
     human = st.text_area("Enter your text here:", "")
 
-    chat = ChatGroq(temperature=0, groq_api_key="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", model_name="llama3-8b-8192")
+    chat = ChatGroq(temperature=0, groq_api_key="groq_api_key", model_name="llama3-8b-8192")
 
     if st.button("Generate Story"):
         if human.strip() == "":
@@ -35,7 +34,7 @@ def main():
             st.write(Story)
 
             # Generate audio
-            API_KEY = "d346f052-a0d2-451b-a3d4-b2e4e50ffb7f"
+            API_KEY = "CAMB_AI_API_KEY"
             url = "https://client.camb.ai/apis/tts"
             selected_language_voices = {"id": 8899, "gender": 1, "age": 30}  # Default voice
             payload = {
